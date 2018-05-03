@@ -1,3 +1,4 @@
+# credo:disable-for-this-file Credo.Check.Design.AliasUsage
 defmodule Hobot.Plugin.Adapter.SlackRTMTest do
   use ExUnit.Case, async: true
   use ExUnitProperties
