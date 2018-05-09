@@ -83,8 +83,7 @@ defmodule Hobot.Plugin.Adapter.SlackRTM do
 
   defp slack_api do
     module =
-      Application.get_env(:hobot_plugin_adapter_slack_rtm, :slack_api) ||
-        Hobot.Plugin.Adapter.SlackRTM.SlackAPIWithGun
+      Application.get_env(:hobot_plugin_adapter_slack_rtm, :slack_api) || Hobot.Plugin.Adapter.SlackRTM.SlackAPIWithGun
 
     # HACK: We have to wait to allow the mock is shared in the testing.
     #  If we didn't wait sharing the mock, the test is failed.
